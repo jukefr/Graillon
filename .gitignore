@@ -5,5 +5,5 @@ backend/generated/
 backend/prisma/migrations
 backend/src/generated
 backend/schema.graphql
-backend/src/dev.db
+backend/prisma/dev.db
 *.env*
