@@ -47,3 +47,9 @@ $ npm run start
 4. use cookies instead of localstorage on frontend for better security
 
 Made with ❤️ by jukefr (https://github.com/jukefr)
+
+
+CHANGEME_SECRET
+CHANGEME_BACKEND_NAME
+CHANGEME_FRONTEND_NAME
+frontend\util\apollo-client.js graphql uri

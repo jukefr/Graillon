@@ -25,6 +25,6 @@ new GraphQLServer({
   },
 }).start(() =>
   console.log(
-    `⭐️ Server running at: http://localhost:4000`,
+    `> Ready on http://localhost:4000`,
   ),
 )

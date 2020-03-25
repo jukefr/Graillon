@@ -1,6 +1,6 @@
 const { verify } = require('jsonwebtoken')
 
-const APP_SECRET = 'appsecret321'
+const APP_SECRET = 'CHANGEME_SECRET'
 
 function getUserId(context) {
   const Authorization = context.request.get('Authorization')

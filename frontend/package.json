@@ -1,16 +1,11 @@
 {
-  "name": "PROJECT_NAME_frontend",
+  "name": "CHANGEME_FRONTEND_NAME",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@apollo/client": "^3.0.0-beta.41",
     "@apollo/link-context": "^2.0.0-beta.3",
@@ -21,5 +16,15 @@
     "react-cookie": "^4.0.3",
     "react-dom": "^16.13.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "prettier": "^2.0.2"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "all"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
 }
