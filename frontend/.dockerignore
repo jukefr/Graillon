@@ -1,0 +1,9 @@
+node_modules/
+.next/
+.vscode/
+generated/
+prisma/migrations
+src/generated
+schema.graphql
+prisma/dev.db
+*.env*
