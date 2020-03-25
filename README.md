@@ -1,4 +1,4 @@
-# PROJECT_NAME
+# Graillon 
 
 Fullstack boilerplate for fast project prototyping.
 This project is not made for 99.9% uptime or stability, only for prototyping.
@@ -25,8 +25,11 @@ You also need to setup the graphql uri in `frontend\util\apollo-client.js`, the 
 
 ## Backend
 
-Prisma2 with SQLite database for fast prototyping.
-Graphql-yoga to run the server.
+**prisma2** with **sqlite** database for fast prototyping.
+**graphql-yoga** to run the server.
+**nexus** for automatic schema generation and crud operations.
+**JWT/bcrypt** authentication.
+**graphql-shield** for permissions.
 
 ### Backend Setup
 
@@ -39,10 +42,9 @@ $ npm start
 
 ## Frontend
 
-Next.js (react) ismomorphic webapp for the same reasons as backend (prototyping speed).
-Appolo-client and hooks for react.
-JWT for auth.
-Does not use redux, simply the new context hooks offered by latest React versions.
+**next.js** (react) ismomorphic webapp for the same reasons as backend (prototyping speed).
+**@apolo/client** for easy graphql bidings.
+Does not use redux, simply the new context hooks offered by latest react versions.
 
 ### Frontend Setup
 
@@ -59,5 +61,6 @@ $ npm run start
 2. `dockerize` everything
 3. migrate to a proper sql database in production
 4. use cookies instead of localstorage on frontend for better security
+5. investigate weird logout bug on frontend with router
 
 Made with ❤️ by jukefr (https://github.com/jukefr)
