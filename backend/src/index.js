@@ -7,6 +7,17 @@ const types = require('./types')
 
 const prisma = new PrismaClient()
 
+const options = {
+  cors: {
+    credentials: true,
+    origin: [
+      'http://localhost:3000',
+      'http://127.0.0.1:3000',
+      'http://frontend:3000',
+    ],
+  },
+}
+
 new GraphQLServer({
   schema: makeSchema({
     types,
@@ -23,4 +34,4 @@ new GraphQLServer({
       prisma,
     }
   },
-}).start(() => console.log(`> Ready on http://localhost:4000`))
+}).start(options, () => console.log(`> Ready on http://localhost:4000`))

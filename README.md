@@ -24,6 +24,13 @@ If using this as a boilerplate there are a couple of strings you need to search 
 
 You also need to setup the graphql uri in `frontend\util\apollo-client.js`, the default is `localhost:4000`
 
+## Docker
+To run the stack easily there is a `docker-compose.yml` file.
+```bash
+$ docker-compose build
+$ docker-compose up
+```
+
 ## Backend
 
 **prisma2** with **sqlite** database for fast prototyping.

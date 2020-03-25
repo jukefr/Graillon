@@ -4,4 +4,4 @@ COPY . .
 RUN npm i && \
     npm run bootstrap
 VOLUME /app
-CMD ['npm', 'start']
+CMD ["npm", "start"]

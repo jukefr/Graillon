@@ -3,7 +3,7 @@ import { setContext } from '@apollo/link-context'
 import withApollo from 'next-with-apollo'
 
 const httpLink = createHttpLink({
-  uri: process.env.GRAPHQL_URI || 'http://localhost:4000',
+  uri: 'http://localhost:4000',
 })
 
 const authLink = setContext((_, { headers }) => {

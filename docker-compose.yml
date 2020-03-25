@@ -5,8 +5,8 @@ services:
     ports:
       - "3000:3000"
     restart: always
-    environment:
-      GRAPHQL_URI: http://backend:4000
   backend:
     build: ./backend
+    ports:
+      - "4000:4000"
     restart: always
