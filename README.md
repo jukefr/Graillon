@@ -21,6 +21,7 @@ If using this as a boilerplate there are a couple of strings you need to search 
 - CHANGEME_SECRET
 - CHANGEME_BACKEND_NAME
 - CHANGEME_FRONTEND_NAME
+
 You also need to setup the graphql uri in `frontend\util\apollo-client.js`, the default is `localhost:4000`
 
 ## Backend
