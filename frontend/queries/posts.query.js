@@ -1,4 +1,4 @@
-import { gql, useQuery } from '@apollo/client';
+import { gql, useQuery } from '@apollo/client'
 
 const POSTS_QUERY = gql`
   query Posts {
@@ -14,6 +14,6 @@ const POSTS_QUERY = gql`
       }
     }
   }
-`;
+`
 
-export default POSTS_QUERY;
+export default POSTS_QUERY

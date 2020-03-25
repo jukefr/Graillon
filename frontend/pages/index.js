@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 import Link from 'next/link'
 
 import Layout from '../components/Layout'
-import { useQuery } from '@apollo/client';
-import POSTS_QUERY from '../queries/posts.query';
+import { useQuery } from '@apollo/client'
+import POSTS_QUERY from '../queries/posts.query'
 
 const Post = ({ post }) => (
   <Link href="/p/[id]" as={`/p/${post.id}`}>
@@ -24,7 +24,7 @@ const Post = ({ post }) => (
 )
 
 const Blog = () => {
-  const { data, loading, error } = useQuery(POSTS_QUERY);
+  const { data, loading, error } = useQuery(POSTS_QUERY)
 
   if (loading) {
     return <div>Loading ...</div>
@@ -38,7 +38,7 @@ const Blog = () => {
       <div className="page">
         <h1>App</h1>
         <main>
-          {data.feed.map(post => (
+          {data.feed.map((post) => (
             <div className="post">
               <Post key={post.id} post={post} />
             </div>
@@ -61,4 +61,4 @@ const Blog = () => {
   )
 }
 
-export default Blog;
+export default Blog

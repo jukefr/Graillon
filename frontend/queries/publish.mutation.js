@@ -1,7 +1,7 @@
-import { gql } from '@apollo/client';
+import { gql } from '@apollo/client'
 
 const PUBLISH_MUTATION = gql`
- mutation PublishMutation($id: ID!) {
+  mutation PublishMutation($id: ID!) {
     publish(id: $id) {
       id
       title
@@ -13,6 +13,6 @@ const PUBLISH_MUTATION = gql`
       }
     }
   }
-`;
+`
 
-export default PUBLISH_MUTATION;
+export default PUBLISH_MUTATION

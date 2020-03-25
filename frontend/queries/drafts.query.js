@@ -1,4 +1,4 @@
-import { gql, useQuery } from '@apollo/client';
+import { gql, useQuery } from '@apollo/client'
 
 const DRAFTS_QUERY = gql`
   query Drafts {
@@ -11,6 +11,6 @@ const DRAFTS_QUERY = gql`
       }
     }
   }
-`;
+`
 
-export default DRAFTS_QUERY;
+export default DRAFTS_QUERY

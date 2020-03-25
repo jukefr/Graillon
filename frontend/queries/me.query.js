@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from '@apollo/client'
 
 const ME_QUERY = gql`
   query Me {
@@ -7,6 +7,6 @@ const ME_QUERY = gql`
       name
     }
   }
-`;
+`
 
-export default ME_QUERY;
+export default ME_QUERY

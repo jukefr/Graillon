@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import Layout from '../components/Layout'
-import { useMutation } from '@apollo/client';
-import CREATE_MUTATION from '../queries/create.mutation';
+import { useMutation } from '@apollo/client'
+import CREATE_MUTATION from '../queries/create.mutation'
 import Router from 'next/router'
 
 const Create = (props) => {
@@ -15,15 +15,15 @@ const Create = (props) => {
         // do stuff
         client.clearStore()
         Router.push('/drafts')
-      }
-    }
+      },
+    },
   )
 
   return (
     <Layout>
       <div>
         <form
-          onSubmit={e => {
+          onSubmit={(e) => {
             e.preventDefault()
 
             createDraft({
@@ -32,27 +32,24 @@ const Create = (props) => {
                 content,
               },
             })
-          }}>
+          }}
+        >
           <h1>Create Draft</h1>
           <input
             autoFocus
-            onChange={e => setTitle(e.target.value)}
+            onChange={(e) => setTitle(e.target.value)}
             placeholder="Title"
             type="text"
             value={title}
           />
           <textarea
             cols={50}
-            onChange={e => setContent(e.target.value)}
+            onChange={(e) => setContent(e.target.value)}
             placeholder="Content"
             rows={8}
             value={content}
           />
-          <input
-            disabled={!content || !title}
-            type="submit"
-            value="Create"
-          />
+          <input disabled={!content || !title} type="submit" value="Create" />
           <a className="back" href="#" onClick={() => Router.push('/')}>
             or Cancel
           </a>
@@ -90,4 +87,4 @@ const Create = (props) => {
   )
 }
 
-export default Create;
+export default Create

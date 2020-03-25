@@ -1,7 +1,7 @@
-import { gql } from '@apollo/client';
+import { gql } from '@apollo/client'
 
 const CREATE_MUTATION = gql`
-mutation DeleteMutation($id: ID!) {
+  mutation DeleteMutation($id: ID!) {
     deletePost(id: $id) {
       id
       title
@@ -13,6 +13,6 @@ mutation DeleteMutation($id: ID!) {
       }
     }
   }
-`;
+`
 
-export default CREATE_MUTATION;
+export default CREATE_MUTATION

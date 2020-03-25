@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 import Layout from '../components/Layout'
 import Link from 'next/link'
-import { useQuery } from '@apollo/client';
-import DRAFTS_QUERY from '../queries/drafts.query';
+import { useQuery } from '@apollo/client'
+import DRAFTS_QUERY from '../queries/drafts.query'
 
 const Post = ({ post }) => (
   <Link href="/p/[id]" as={`/p/${post.id}`}>
@@ -37,7 +37,7 @@ const Drafts = () => {
       <div className="page">
         <h1>Drafts</h1>
         <main>
-          {data.drafts.map(post => (
+          {data.drafts.map((post) => (
             <div className="post">
               <Post key={post.id} post={post} />
             </div>
@@ -60,4 +60,4 @@ const Drafts = () => {
   )
 }
 
-export default Drafts;
+export default Drafts

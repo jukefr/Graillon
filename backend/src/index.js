@@ -17,14 +17,10 @@ new GraphQLServer({
     },
   }),
   middlewares: [permissions],
-  context: request => {
+  context: (request) => {
     return {
       ...request,
       prisma,
     }
   },
-}).start(() =>
-  console.log(
-    `> Ready on http://localhost:4000`,
-  ),
-)
+}).start(() => console.log(`> Ready on http://localhost:4000`))

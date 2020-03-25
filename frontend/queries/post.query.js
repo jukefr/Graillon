@@ -1,4 +1,4 @@
-import { gql, useQuery } from '@apollo/client';
+import { gql, useQuery } from '@apollo/client'
 
 const POST_QUERY = gql`
   query PostQuery($id: ID!) {
@@ -13,7 +13,6 @@ const POST_QUERY = gql`
       }
     }
   }
-`;
+`
 
-export default POST_QUERY;
-
+export default POST_QUERY
