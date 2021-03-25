@@ -1,4 +1,11 @@
-# Graillon 
+<div align="center">
+  <a href="https://github.com/jukefr/AnarchyX">
+  <img width="100%;"  src="https://user-images.githubusercontent.com/2154296/112429158-960e3600-8d3c-11eb-9c6f-9fe73809a915.png">
+  </a>
+  <br>
+</div>
+
+Note: Will be updating this project and modernizing it very soon.
 
 Fullstack boilerplate for fast project prototyping.
 This project is not made for 99.9% uptime or stability, only for prototyping.
